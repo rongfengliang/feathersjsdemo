@@ -1,0 +1,25 @@
+{
+  "name": "feathers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@feathersjs/express": "^1.1.2",
+    "@feathersjs/feathers": "^3.0.5",
+    "@feathersjs/socketio": "^3.0.2",
+    "browserify": "^15.2.0",
+    "bufferutil": "^3.0.3",
+    "feathers-nedb": "^3.0.0",
+    "http-server": "^0.11.1",
+    "nedb": "^1.8.0",
+    "socket.io": "^2.0.4",
+    "uglifyify": "^4.0.5"
+  },
+  "scripts": {
+    "build": "browserify client.js -o indextem.js",
+    "live": "http-server",
+    "app": "browserify -g uglifyify ./indextem.js > index.js",
+    "start": "yarn build && yarn app && yarn live",
+    "server": "node server"
+  }
+}
