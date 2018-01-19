@@ -8,7 +8,6 @@
     "@feathersjs/feathers": "^3.0.5",
     "@feathersjs/socketio": "^3.0.2",
     "browserify": "^15.2.0",
-    "bufferutil": "^3.0.3",
     "feathers-nedb": "^3.0.0",
     "http-server": "^0.11.1",
     "nedb": "^1.8.0",
